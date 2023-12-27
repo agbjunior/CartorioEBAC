@@ -127,6 +127,7 @@ int main ()
  		printf("\t1 - Inclusão de usuários\n");
  		printf("\t2 - Consulta de usuários\n");
  		printf("\t3 - Deletar usuários\n\n"); 
+ 		printf("\t4 - Sair do sistema\n\n");
  		printf("Opção:");// Fim do menu
  
  		scanf("%d", &opcao); // armazenando a escolha do usuário
@@ -148,6 +149,10 @@ int main ()
 			Deletar(); // chamada de funções	
 			break;
 			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;
 			
 			default:
 			printf ("Não existe essa função, tente novamente!\n");
